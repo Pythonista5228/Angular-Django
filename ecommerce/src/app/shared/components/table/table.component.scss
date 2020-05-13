@@ -1,0 +1,107 @@
+.table-main-container {
+  padding: 14px 10px;
+  box-sizing: border-box;
+  overflow: scroll;
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+
+  /* Handle on hover */
+  p {
+    color: #868ba1;
+    line-height: 2;
+  }
+
+  .main-table {
+    height: 100%;
+    width: calc(100% - 60px);
+    background-color: whitesmoke;
+    overflow: auto;
+    box-shadow: 0 8px 13px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: brown;
+  border-radius: 0px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  tr {
+    th {
+      padding: 0.75rem;
+      padding-right: 3rem;
+      border-bottom: 1px solid #dee2e6;
+      border-bottom-width: 3px;
+      border-bottom-color: rgb(222, 226, 230);
+      position: relative;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #343a40;
+      text-align: left;
+      span {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        right: -2px;
+        top: calc(0.75em - 0.75em/2.5);
+        color: #868ba1;
+        font-size: 18px;
+        i {
+
+            &:first-child{
+                line-height: .9;
+            }
+            line-height: 0;
+          &:hover {
+            color: lightskyblue;
+          }
+        }
+      }
+    }
+  }
+  tbody {
+    .odd {
+      background-color: #eaeaea;      
+    }
+    td {
+        padding: 0.78rem 0.8rem;
+        white-space: nowrap;
+        box-sizing: content-box;
+        vertical-align: top;
+        font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+        font-size: 0.875rem;
+        font-weight: normal;
+      }
+    tr {
+      color: #868ba1;
+    }
+  }
+}
+
+.ion-android-arrow-dropup:before {
+    content: "\f365";
+    line-height: 0;
+}
+.ion-android-arrow-dropdown:before {
+    line-height: 0;
+}

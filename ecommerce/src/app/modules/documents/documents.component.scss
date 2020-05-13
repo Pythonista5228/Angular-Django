@@ -1,0 +1,69 @@
+.main-container {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.search-box {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  position: sticky;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+  top: 0;
+  background-color: darkgray;
+
+  .search-box-container {
+    position: relative;
+    width: fit-content;
+    font-weight: bold;
+    .search-button-icon {
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      font-size: 25px;
+      z-index: 1;
+      color: grey;
+    }
+  }
+
+  input[type="text"] {
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid lightblue;
+    font-size: 18px;
+    width: 30px;
+    padding: 20px;
+    transition: all 0.4s ease;
+    width: 220px;
+    margin-left: 20px;
+
+    color: lightcoral;
+    &:focus {
+      outline: none;
+      //   padding: 10px 25px;
+      ::placeholder {
+        color: #868ba1;
+        opacity: 0.5; /* Firefox */
+        font-size: 15px;
+        line-height: 1.3;
+        opacity: 0;
+        color: transparent;
+      }
+    }
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+::placeholder {
+  color: #868ba1;
+  opacity: 0.5; /* Firefox */
+  font-size: 15px;
+  line-height: 1.3;
+}

@@ -1,0 +1,220 @@
+<aside>
+  <!-- <section class="user-profile">
+        <img src="https://cdn5.vectorstock.com/i/1000x1000/04/09/user-icon-vector-5770409.jpg" alt="">
+        <div class="user-info">
+        </div>
+    </section> -->
+  <ul class="side-nav-bar">
+    <a
+      [routerLink]="['/dashboard']"
+      [routerLinkActiveOptions]="{ exact: true }"
+      routerLinkActive="active"
+      class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-ios-home-outline"></i
+        ><span class="menu-item-label">Dashboard</span
+        >
+      </li>
+    </a>
+    <a [routerLink]="['/dashboard/userlogin']" routerLinkActive="active" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-ribbon-a"></i
+        ><span class="menu-item-label">Developers</span>
+      </li></a
+    >
+    <a [routerLink]="['/dashboard/cloud-documents']" routerLinkActive="active" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-document-text"></i
+        ><span class="menu-item-label">Cloud Documents</span></li
+    ></a>
+    <a href="#" class="top-nav" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-ios-pie"></i
+        ><span class="menu-item-label">Developers</span>
+        <i class="show-more-icon ion-ios-arrow-down"></i>
+      </li>
+      <ul class="subnavbar">
+        <a href="#" class="top-nav" class="top-nav"
+          ><li class="nav-item">
+            -<span class="menu-item-label">Manish</span>
+          </li>
+          <li class="nav-item">-<span class="menu-item-label">Moreshwar</span></li>
+          <li class="nav-item">
+            -<span class="menu-item-label">Rashmi</span>
+          </li>
+          <li class="nav-item">-<span class="menu-item-label">Prasanna</span></li>
+          <li class="nav-item">
+            -<span class="menu-item-label">Sanjay</span>
+          </li>
+          <li class="nav-item">
+            -<span class="menu-item-label">Anushree</span>
+          </li>
+        </a>
+      </ul></a
+    >
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-ribbon-a"></i
+        ><span class="menu-item-label">Bandwith</span>
+      </li></a
+    >
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-male"></i
+        ><span class="menu-item-label">Create a bug</span>
+      </li></a
+    >
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-connection-bars"></i
+        ><span class="menu-item-label">Forms</span>
+        <i class="show-more-icon ion-ios-arrow-down"></i></li
+    >
+    <ul class="subnavbar">
+      <a href="#" class="top-nav" class="top-nav"
+        ><li class="nav-item">
+          -<span class="menu-item-label">Go to section</span
+          >
+        </li>
+        <li class="nav-item">
+          -<span class="menu-item-label">Pizza</span
+          >
+        </li>
+        <li class="nav-item">
+          -<span class="menu-item-label">Cricket</span
+          >
+        </li>
+        <li class="nav-item">
+          -<span class="menu-item-label">India</span
+          >
+        </li>
+        <li class="nav-item">
+          -<span class="menu-item-label">I don't know</span
+          >
+        </li>
+        <li class="nav-item">
+          -<span class="menu-item-label">What to say</span
+          >
+        </li>
+      </a>
+    </ul></a>
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-radio-waves"></i
+        ><span class="menu-item-label">Tables</span>
+      </li></a
+    >
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-flash-off"></i
+        ><span class="menu-item-label">Maps</span>
+      </li></a
+    >
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-ios-cog"></i
+        ><span class="menu-item-label">Utilities</span>
+        <i class="show-more-icon ion-ios-arrow-down"></i></li
+    >
+    <ul class="subnavbar">
+      <a href="#" class="top-nav" class="top-nav"
+        ><li class="nav-item">
+          -<span class="menu-item-label">Go to section</span
+          >
+        </li>
+        <li class="nav-item">
+          -<span class="menu-item-label">Pizza</span
+          >
+        </li>
+        <li class="nav-item">
+          -<span class="menu-item-label">Cricket</span
+          >
+        </li>
+        <li class="nav-item">
+          -<span class="menu-item-label">India</span
+          >
+        </li>
+        <li class="nav-item">
+          -<span class="menu-item-label">I don't know</span
+          >
+        </li>
+        <li class="nav-item">
+          -<span class="menu-item-label">What to say</span
+          >
+        </li>
+      </a>
+    </ul></a>
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-android-wifi"></i
+        ><span class="menu-item-label">App & Games</span>
+        <i class="show-more-icon ion-ios-arrow-down"></i></li
+    ></a>
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-android-train"></i
+        ><span class="menu-item-label">Layout</span>
+        <i class="show-more-icon ion-ios-arrow-down"></i></li
+    ></a>
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-android-folder"></i
+        ><span class="menu-item-label">Site map</span>
+      </li></a
+    >
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-ios-lightbulb-outline"></i
+        ><span class="menu-item-label">Cards& wedget</span>
+        <i class="show-more-icon ion-ios-arrow-down"></i></li
+    ></a>
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-ios-pie"></i
+        ><span class="menu-item-label">UI Element</span>
+        <i class="show-more-icon ion-ios-arrow-down"></i></li
+    ></a>
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-ribbon-a"></i
+        ><span class="menu-item-label">Navigation</span>
+      </li></a
+    >
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-male"></i
+        ><span class="menu-item-label">Charts</span>
+      </li></a
+    >
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-connection-bars"></i
+        ><span class="menu-item-label">Forms</span>
+        <i class="show-more-icon ion-ios-arrow-down"></i></li
+    ></a>
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-ios-pie"></i
+        ><span class="menu-item-label">UI Element</span>
+        <i class="show-more-icon ion-ios-arrow-down"></i></li
+    ></a>
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-ribbon-a"></i
+        ><span class="menu-item-label">Navigation</span>
+      </li></a
+    >
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-male"></i
+        ><span class="menu-item-label">Charts</span>
+      </li></a
+    >
+    <a href="#" class="top-nav"
+      ><li class="nav-item">
+        <i class="material-icon ion-connection-bars"></i
+        ><span class="menu-item-label">Forms</span>
+        <i class="show-more-icon ion-ios-arrow-down"></i></li
+    ></a>
+  </ul>
+</aside>
