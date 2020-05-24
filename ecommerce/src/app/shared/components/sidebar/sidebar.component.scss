@@ -122,7 +122,7 @@ aside {
 .top-nav {
   &:hover {
     .subnavbar {
-      height: 240px;
+      height: inherit;
     }
   }
 }

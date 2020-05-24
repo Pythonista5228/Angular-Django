@@ -1,38 +1,19 @@
 <main class="main-container">
   <section class="search-box">
     <div class="search-box-container">
-        CLOUD DOCUMENTS
-      <input type="text" placeholder="Search document" /><i
+      Category : {{categoryName}} <input type="text" placeholder="Search document" (input)="filterProducts($event.target.value)" /><i
         class="search-button-icon ion-ios-search"
       ></i>
     </div>
   </section>
-  <section class="card-container">
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-    <app-cards></app-cards>
-  </section>
+  <!-- <section class="card-container">
+    <ng-container *ngFor="let item of productList">  
+      <app-cards [card_date]="item"></app-cards>
+    </ng-container>
+  </section> -->
+  <cdk-virtual-scroll-viewport class="card-container"  style="height:calc(100% - 62px)"  itemSize="90">
+    <ng-container *cdkVirtualFor="let item of productList">
+      <app-cards [card_date]="item"></app-cards>
+    </ng-container>
+  </cdk-virtual-scroll-viewport>
 </main>

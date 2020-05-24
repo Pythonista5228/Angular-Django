@@ -1,9 +1,4 @@
 <aside>
-  <!-- <section class="user-profile">
-        <img src="https://cdn5.vectorstock.com/i/1000x1000/04/09/user-icon-vector-5770409.jpg" alt="">
-        <div class="user-info">
-        </div>
-    </section> -->
   <ul class="side-nav-bar">
     <a
       [routerLink]="['/dashboard']"
@@ -16,42 +11,28 @@
         >
       </li>
     </a>
-    <a [routerLink]="['/dashboard/userlogin']" routerLinkActive="active" class="top-nav"
+    <a [routerLink]="['/products']" routerLinkActive="active" class="top-nav"
       ><li class="nav-item">
         <i class="material-icon ion-ribbon-a"></i
-        ><span class="menu-item-label">Developers</span>
+        ><span class="menu-item-label">All Products</span>
       </li></a
     >
-    <a [routerLink]="['/dashboard/cloud-documents']" routerLinkActive="active" class="top-nav"
-      ><li class="nav-item">
-        <i class="material-icon ion-document-text"></i
-        ><span class="menu-item-label">Cloud Documents</span></li
-    ></a>
-    <a href="#" class="top-nav" class="top-nav"
+    <span class="top-nav" class="top-nav"
       ><li class="nav-item">
         <i class="material-icon ion-ios-pie"></i
-        ><span class="menu-item-label">Developers</span>
+        ><span class="menu-item-label">Categories</span>
         <i class="show-more-icon ion-ios-arrow-down"></i>
       </li>
       <ul class="subnavbar">
-        <a href="#" class="top-nav" class="top-nav"
-          ><li class="nav-item">
-            -<span class="menu-item-label">Manish</span>
-          </li>
-          <li class="nav-item">-<span class="menu-item-label">Moreshwar</span></li>
+        <ng-container *ngFor="let item of categories_list">
+        <a [routerLink]="['/categories/'+item.name]"  routerLinkActive="active"  class="top-nav" class="top-nav">
           <li class="nav-item">
-            -<span class="menu-item-label">Rashmi</span>
-          </li>
-          <li class="nav-item">-<span class="menu-item-label">Prasanna</span></li>
-          <li class="nav-item">
-            -<span class="menu-item-label">Sanjay</span>
-          </li>
-          <li class="nav-item">
-            -<span class="menu-item-label">Anushree</span>
+            -<span class="menu-item-label">{{item.name}}</span>
           </li>
         </a>
-      </ul></a
-    >
+      </ng-container>
+      </ul>
+    </span>
     <a href="#" class="top-nav"
       ><li class="nav-item">
         <i class="material-icon ion-ribbon-a"></i
@@ -61,7 +42,7 @@
     <a href="#" class="top-nav"
       ><li class="nav-item">
         <i class="material-icon ion-male"></i
-        ><span class="menu-item-label">Create a bug</span>
+        ><span class="menu-item-label">Add products</span>
       </li></a
     >
     <a href="#" class="top-nav"

@@ -1,12 +1,22 @@
 <div class="card">
-    <div class="row">
-        <div class="left-section">
-           <h5 class="">How can I setup my cloud top?</h5>
-           <p class="">Show me</p>
-        </div>
-        <div class="right-section">
-            <i class="ion-document-text document-icon"></i>
-           <p class="mb-0">Author: manishya@google.com</p>
-        </div>
-     </div>
+   <div class="row">
+      <div class="left-section">
+         <img height="130px" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="">
+         <div class="product-details">
+            <div class="product-list-item"><span class="prod-heading">ProductName:</span> {{card_date.name}}</div>
+            <div class="product-list-item"><span class="prod-heading">BrandName:</span> {{card_date.brand}}</div>
+            <div class="product-list-item"><span class="prod-heading">price:</span> {{card_date.price}}</div>
+            <div class="product-list-item"><span class="prod-heading">Status:</span> {{card_date.active}}</div>
+         </div>
+         <div class="product-details">
+            <div class="product-list-item"><span class="prod-heading">quantity:</span> {{card_date.quantity}}</div>
+            <div class="product-list-item"><span class="prod-heading">Created:</span> {{card_date.created}}</div>
+            <div class="product-list-item"><span class="prod-heading">last_modified:</span> {{card_date.last_modified}}</div>
+         </div>
+      </div>
+      <div class="right-section">
+         <p class="mb-0">Edit me</p>
+      </div>
+   </div>
+   
 </div>

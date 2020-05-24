@@ -1,53 +1,76 @@
 .card {
-    max-width: 430px;
-    height: fit-content;
-    background-color: #fff;
-    margin: 15px;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
-    transition: all .3s ease-in-out;
+  min-width: 1350px;
+  height: fit-content;
+  background-color: #fff;
+  margin: 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
 
-    .row {
-        width: 100%;
-        padding: 20px;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        .left-section {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            h5 {
-                font-size: 20px;
-            }
-            p {
-                font-size: 15px;
-                margin-top:3px;
-                color: #1a73e8;
-                transition: all .5 ease;
-                max-width: fit-content;
-                &:hover {
-                    font-weight: bold;
-                    cursor: pointer;
-                }
-            }
-        }
-        .right-section{
-            text-align: right;
-            line-height: 1.2;
-            .document-icon {
-                font-size: 45px;
-                color: #1a73e8;
-            }
-            p{
-                color: #868ba1;
-                font-size: 12px;
-            }
- 
-        }
-    }
+  .row {
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    .left-section {
+      display: flex;
+      justify-content: space-around;
 
-    &:hover {
-        box-shadow: 0 4px 23px rgba(0,0,0,0.15);
+      img{
+        box-shadow: -11px -12px 3px rgba(0,0,0,0.2);
+      }
+
+      h5 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+        margin-top: 3px;
+        color: #1a73e8;
+        transition: all 0.5 ease;
+        max-width: fit-content;
+        &:hover {
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
     }
+    .right-section {
+      text-align: right;
+      line-height: 1.2;
+      .document-icon {
+        font-size: 45px;
+        color: #1a73e8;
+      }
+      p {
+        color: #868ba1;
+        font-size: 12px;
+        &:hover {
+          cursor: pointer;
+          color: blue;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 4px 23px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.product-details {
+  margin-left: 32px;
+  .product-list-item {
+    margin: 5px;
+    color: #868ba1;
+    min-width: 300px;
+  }
+}
+
+.prod-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 4px;
+  color: brown;
 }

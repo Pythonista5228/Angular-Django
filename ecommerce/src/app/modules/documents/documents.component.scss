@@ -13,11 +13,16 @@
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
   top: 0;
   background-color: darkgray;
+  z-index: 2;
 
   .search-box-container {
     position: relative;
     width: fit-content;
     font-weight: bold;
+    // margin: 0 auto;
+    // margin-left: 50px;
+    text-transform: uppercase;
+
     .search-button-icon {
       position: absolute;
       right: 10px;
@@ -36,7 +41,7 @@
     width: 30px;
     padding: 20px;
     transition: all 0.4s ease;
-    width: 220px;
+    width: 1020px;
     margin-left: 20px;
 
     color: lightcoral;

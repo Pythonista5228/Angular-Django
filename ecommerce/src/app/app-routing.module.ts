@@ -4,24 +4,25 @@ import { DefaultComponent } from './layout/default/default.component';
 import { UserComponent } from './modules/user/user.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { DocumentsComponent } from './modules/documents/documents.component';
+import { ProductListComponent } from './modules/product-list/product-list.component';
 
 const routes: Routes = [
   {
-    path: 'dashboard',
+    path: '',
     component: DefaultComponent,
     children: [
       {
-        path: '',
+        path: 'dashboard',
         component: DashboardComponent,
         pathMatch:"full",
       },
       {
-        path: 'userlogin',
-        component: UserComponent,
+        path: 'products',
+        component: ProductListComponent,
         pathMatch:"full",
       },
       {
-        path: 'cloud-documents',
+        path: 'categories/:product_name',
         component: DocumentsComponent,
         pathMatch:"full",
       },

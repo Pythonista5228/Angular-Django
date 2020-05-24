@@ -1,144 +1,34 @@
 <section class="table-main-container">
-  <div class="">
+  <section class="search-box">
+    <div class="search-box-container">
+        Search product
+      <input type="text" placeholder="Search" (input)="serachProduct($event.target.value)"/>
+      <i class="search-button-icon ion-ios-search"></i>
+    </div>
+  </section>
+  <!-- <div class="">
     <h4 class="tx-gray-800 mg-b-5">Developers</h4>
     <p class="mg-b-0">
       DataTables is a plug-in for the jQuery Javascript library.
     </p>
-  </div>
+  </div> -->
   <div class="main-table">
     <table style="width: 100%;">
       <thead>
         <tr>
-          <th>
-            Name
-            <span>
+          <th *ngFor="let heading of table_heading; index as i">
+            {{heading}}
+            <!-- <span *ngIf="i!=0">
               <i class="ion-android-arrow-dropup"></i>
               <i class="ion-android-arrow-dropdown"></i>
-            </span>
+            </span> -->
           </th>
-          <th>Name
-            <span>
-              <i class="ion-android-arrow-dropup"></i>
-              <i class="ion-android-arrow-dropdown"></i>
-            </span>
-          </th>
-          <th>Name <span>
-            <i class="ion-android-arrow-dropup"></i>
-            <i class="ion-android-arrow-dropdown"></i>
-          </span></th>
-          <th>Name</th>
-          <th>Name <span>
-            <i class="ion-android-arrow-dropup"></i>
-            <i class="ion-android-arrow-dropdown"></i>
-          </span></th>
-          <th>Name</th>
-          <th>Name</th>
-          <th>Name <span>
-            <i class="ion-android-arrow-dropup"></i>
-            <i class="ion-android-arrow-dropdown"></i>
-          </span></th>
-          <th>Name</th>
-          <th>Name <span>
-            <i class="ion-android-arrow-dropup"></i>
-            <i class="ion-android-arrow-dropdown"></i>
-          </span></th>
-          <th>Name</th>
-          <th>Name</th>
-          <th>Name</th>
-          <th>Name <span>
-            <i class="ion-android-arrow-dropup"></i>
-            <i class="ion-android-arrow-dropdown"></i>
-          </span></th>
-          <th>Name</th>
-          <th>Name <span>
-            <i class="ion-android-arrow-dropup"></i>
-            <i class="ion-android-arrow-dropdown"></i>
-          </span></th>
-          <th>Name</th>
-          <th>Name <span>
-            <i class="ion-android-arrow-dropup"></i>
-            <i class="ion-android-arrow-dropdown"></i>
-          </span></th>
-          <th>Name</th>
-          <th>Name <span>
-            <i class="ion-android-arrow-dropup"></i>
-            <i class="ion-android-arrow-dropdown"></i>
-          </span></th>
-          <th>Name</th>
         </tr>
       </thead>
       <tbody>
-        <tr class="odd">
-          <td>Manish</td>
-          <td>$162,700</td>
-          <td>Manish</td>
-          <td>Airi</td>
-          <td>Chief Executive Officer</td>
-          <td>2008/11/28</td>
-          <td>$162,700</td>
-          <td>a.satou@datatables.net</td>
-          <td>Satou</td>
-          <td>Manish</td>
-          <td>Manish</td>
-          <td>a.satou@datatables.net</td>
-          <td>$162,700</td>
-          <td>a.satou@datatables.net</td>
-
-          <td>Manish</td>
-          <td>Manish</td>
-          <td>Manish</td>
-          <td>a.satou@datatables.net</td>
-          <td>$162,700</td>
-          <td>a.satou@datatables.net</td>
-          <td>a.satou@datatables.net</td>
-        </tr>
-        <tr class="">
-          <td>Manish</td>
-          <td>$162,700</td>
-          <td>Manish</td>
-          <td>Airi</td>
-          <td>Chief Executive Officer</td>
-          <td>2008/11/28</td>
-          <td>$162,700</td>
-          <td>a.satou@datatables.net</td>
-          <td>Satou</td>
-          <td>Manish</td>
-          <td>Manish</td>
-          <td>a.satou@datatables.net</td>
-          <td>$162,700</td>
-          <td>a.satou@datatables.net</td>
-
-          <td>Manish</td>
-          <td>Manish</td>
-          <td>Manish</td>
-          <td>a.satou@datatables.net</td>
-          <td>$162,700</td>
-          <td>a.satou@datatables.net</td>
-          <td>a.satou@datatables.net</td>
-        </tr>
-        <tr class="odd">
-          <td>Manish</td>
-          <td>$162,700</td>
-          <td>Manish</td>
-          <td>Airi</td>
-          <td>Chief Executive Officer</td>
-          <td>2008/11/28</td>
-          <td>$162,700</td>
-          <td>a.satou@datatables.net</td>
-          <td>Satou</td>
-          <td>Manish</td>
-          <td>Manish</td>
-          <td>a.satou@datatables.net</td>
-          <td>$162,700</td>
-          <td>a.satou@datatables.net</td>
-
-          <td>Manish</td>
-          <td>Manish</td>
-          <td>Manish</td>
-          <td>a.satou@datatables.net</td>
-          <td>$162,700</td>
-          <td>a.satou@datatables.net</td>
-          <td>a.satou@datatables.net</td>
+        <tr [ngClass]="{'odd' : i%2 == 0}" *ngFor="let item of table_data; index as i">
+          <!-- <td>{{i}}</td> -->
+          <td *ngFor="let item_ of item;">{{item_}}</td>
         </tr>
       </tbody>
     </table>
